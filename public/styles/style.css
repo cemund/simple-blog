@@ -1,0 +1,85 @@
+:root {
+  --primary: #0d1b2a;
+  --white: #dadada;
+  --white-2: #e0e1dd;
+  --black: #0d0d0d;
+  --black-font: #363636;
+  --secondary: #415a77;
+}
+
+.dark-background {
+  background-color: var(--primary);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.white2 {
+  background-color: var(--white-2);
+}
+
+.color-black {
+  color: var(--black);
+}
+.color-black-text {
+  color: var(--black-font);
+}
+
+.card-text {
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* word-wrap: break-word; */
+
+  /* max-height = line-height & number of lines (using em) */
+  max-height: 3.4em;
+  line-height: 1.7em;
+}
+
+.card-title {
+  overflow: hidden;
+  max-height: 10vw;
+  /* line-height: 1em; */
+}
+
+.card {
+  min-height: 40vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.readmore {
+  max-width: 150px;
+}
+
+.readmore:hover {
+  color: var(--secondary);
+  transition: 0.3s;
+}
+
+.active {
+  background-color: var(--secondary) !important;
+}
+
+.active:hover {
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+}
+
+.home:hover {
+  border-bottom: 2px solid var(--white);
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-danger {
+  background-color: rgba(116, 2, 2, 0.336);
+  border: rgba(116, 2, 2, 0.336);
+}

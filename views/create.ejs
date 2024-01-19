@@ -1,0 +1,29 @@
+<%- include("./partials/header.ejs") %>
+<div class="container">
+  <form action="/submit" method="post">
+    <h1 class="fw-bold mb-3">Create Blog</h1>
+
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="blog-title"
+        name="blog-title"
+        placeholder=""
+      />
+      <label for="blog-title">Blog title</label>
+    </div>
+    <div class="form-floating">
+      <textarea
+        class="form-control mb-3"
+        placeholder="Enter blog body"
+        id="blog-body"
+        style="height: 100px"
+        name="blog-body"
+      ></textarea>
+      <label for="blog-body">Blog body</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>
+<%- include("./partials/footer.ejs") %>
